@@ -54,7 +54,7 @@ Wireshark 4.6.9 on Windows 11.
 
    ![Submitting the flag](images/submit-flag.jpeg)
 
-   ![The challenge marked as solved](solved.jpeg)
+   ![The challenge marked as solved](images/solved.jpeg)
 
 ## Result
 
