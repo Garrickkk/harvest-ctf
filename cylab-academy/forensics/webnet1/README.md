@@ -50,10 +50,10 @@ The TLS terms used here (RSA key exchange, pre-master secret, session keys) are 
    ![Exporting vulture.jpg from the capture](images/export-vulture.png)
 
    ![The exported image](images/vulture.jpg)
-7. Open `vulture.jpg` in Notepad (right-click > Open with > Notepad) and press Ctrl+F to search for `picoCTF`. The flag is readable as plain text inside the file.
+7. Open `vulture.jpg` in Notepad (right-click > Open with > Notepad) and press Ctrl+F to search for `academy`. The flag is readable as plain text inside the file.
 
    ![The flag inside vulture.jpg, opened in Notepad](images/flag.png)
-8. Replace the `picoCTF` prefix with `academy` and submit the flag on the challenge page.
+8. Submit the flag on the challenge page.
 
    ![Submitting the flag](images/submit.png)
 
