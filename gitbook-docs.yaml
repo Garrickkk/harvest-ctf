@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: harvest-ctf
+  structure:
+    - type: space
+      key: writeups
+      title: Write-ups
+      path: writeups
+      default: true
+      content:
+        directory: ./
