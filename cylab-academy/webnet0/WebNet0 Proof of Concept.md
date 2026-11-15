@@ -10,7 +10,7 @@
 | Files provided | A packet capture (`webnet0-capture.pcap`) and an RSA private key (`picopico.key`) |
 | Flag format | `academy{...}` |
 
-![The WebNet0 challenge](images/01-challenge.png)
+![The WebNet0 challenge](images/challenge.jpeg)
 
 ## Objective
 
@@ -39,22 +39,22 @@ Wireshark 4.6.9 on Windows 11.
 1. Download the packet capture and the private key from the challenge page.
 2. Open the capture in Wireshark (File > Open). It contains 39 packets between a client (128.237.140.23) and a server (172.31.22.220) on port 443. The packets show TCP and TLSv1.2 handshakes, and the payload is unreadable.
 
-   ![The capture before decryption](images/02-capture-encrypted.png)
+   ![The capture before decryption](images/capture.jpeg)
 3. Load the private key: Edit > Preferences > RSA Keys > Add new keyfile, select the key file, then click OK.
 
-   ![The RSA Keys window with the key file loaded](images/03-rsa-key-loaded.png)
+   ![The RSA Keys window with the key file loaded](images/rsa-key.jpeg)
 4. Reload the capture with Ctrl+R so Wireshark applies the key.
 5. Type `http` in the display filter bar and press Enter. The packets that were encrypted now appear as HTTP requests and responses.
 
-   ![Decrypted HTTP packets with the http filter applied](images/04-http-filter.png)
+   ![Decrypted HTTP packets with the http filter applied](images/http-filter.jpeg)
 6. Select the `HTTP/1.1 200 OK` (text/html) packet and expand Hypertext Transfer Protocol in the packet details pane. The flag is in the `Pico-Flag` response header.
 
-   ![The Pico-Flag response header](images/05-flag-header.png)
+   ![The Pico-Flag response header](images/flag.jpeg)
 7. Submit the flag on the challenge page.
 
-   ![Submitting the flag](images/06-flag-submitted.png)
+   ![Submitting the flag](images/submit-flag.jpeg)
 
-   ![The challenge marked as solved](images/07-challenge-solved.png)
+   ![The challenge marked as solved](solved.jpeg)
 
 ## Result
 
